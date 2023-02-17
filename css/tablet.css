@@ -1,0 +1,143 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+                            /* header */
+    .header-container {
+        justify-content: flex-start;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items:center;
+        gap: 123px;
+    }
+
+    .header-list {
+        display: flex;
+        align-items:center;
+        gap: 40px;
+    }
+
+    .nav-link {
+        transition: color var(--animation);
+
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    
+
+    .address-list {
+        margin-left: auto;
+        display: inline;
+    }
+    
+    .address-link {
+        font-size: 12px;
+        line-height: 1.33px;
+        letter-spacing: 0.02em;
+        font-style: normal;
+    }
+    
+    .menu-btn-open {
+        display: none;
+    }
+
+                           /* hero */
+    .hero {
+    padding-bottom: 108px;
+
+    height: 436px;
+
+    background-image: 
+    var(--grad), 
+    url(../images/hero/desktop/desktop-bg-1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero  {
+    background-image: var(--grad),
+    url('../images/hero/desktop/desktop-bg-2x.jpg');
+    }
+    }
+
+    .hero-title {
+        margin-bottom: 40px;
+        max-width: 496px;
+    
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+                            /* --- our principles --- */ 
+    .princip-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .princip-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .section-suptitle {
+        text-align: left;
+    }
+
+                                /* --- our team ---*/
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center
+    }
+
+    .team-item {
+        padding-bottom: 32px;
+        max-width: calc((100% - 24px) / 2);
+    }
+
+                            /* -- customers --*/
+    .cust-item {
+        width: calc((100% - 72px) / 3);
+    }
+
+                            /* --- footer --- */
+
+    .footer-media {
+        text-align: left;
+    }
+
+    .footer-form {
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-email {
+        width: 264px;
+    }
+
+    .footer-button {
+        margin-top: 0;
+    }
+
+    .footer-text {
+        margin-top: 16px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-text.media {
+        text-align: left;
+    }
+
+    .footer-soc-list {
+        justify-content: left;
+    }
+
+}

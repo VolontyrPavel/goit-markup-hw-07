@@ -1,0 +1,118 @@
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+                            /* header */
+    .header-container {
+        padding-right: 156px;
+        padding-left: 156px;
+    }
+
+    .nav-list {
+        gap: 76px;
+    }
+
+    .address-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5px;
+    }
+
+                           /* hero */
+    .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    height: 600px;
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
+                            /* --- our principles --- */ 
+    .princip-list {
+    margin-right: 156px;
+    margin-left: 156px;
+}
+
+.princip-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.princip-link {
+    margin-bottom: 8px;
+    height: 112px;
+    background-color: var(--secondary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+    .princip-icon {
+        fill: var(--title-text-color);
+    }
+
+    .section-suptitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .section-text {
+        font-weight: 400;
+    }
+
+                            /* --- our team ---*/
+    .team-item {
+        max-width: calc((100% - 72px) / 4);
+    }
+
+                            /* -- customers --*/
+    .cust-list {
+        flex-wrap: nowrap;
+    }
+
+                                /* --- footer --- */
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.footer-media {
+    margin-right: 120px;
+    align-items:center;
+}
+
+.footer-div-media {
+    margin-right: 80px;
+}
+
+.footer-text.media {
+    margin-top: 0;
+}
+
+.team-soc-link.ft:is(:hover, :focus) {
+    background-color: #31D0AA;
+}
+
+.footer-button:is(:hover, :focus) {
+    background-color: var(--hover-background);
+}
+}
+
