@@ -9,12 +9,14 @@
     }
 
                             /* header */
-    
-.header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    box-sizing: border-box;
+    .current::after {
+    bottom: -29px;
+    }
 
+    .header {
+    padding-bottom: 24px;
+    
+    box-sizing: border-box;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -84,7 +86,7 @@
 
                             /*-- what are we doing --*/
 .do {
-    display: flex;
+    display: block;
 }
 
 .do-list {
@@ -94,6 +96,10 @@
     gap: 24px;
 }
                             /* --- our team ---*/
+    .section.another-back {
+    padding-bottom: 120px;
+    }
+    
     .team-item {
         max-width: calc((100% - 72px) / 4);
     }
@@ -110,6 +116,7 @@
 }
 
 .ft-div {
+    margin-bottom: 0;
     gap: 0;
 }
 
@@ -127,6 +134,7 @@
 }
 
 .ft-sub {
+    margin-top: 0;
     margin-left: 0;
 }
 
@@ -140,6 +148,10 @@
 
 .footer-button:is(:hover, :focus) {
     background-color: var(--hover-background);
+}
+
+.footer-soc-list {
+    gap: 16px;
 }
 }
 

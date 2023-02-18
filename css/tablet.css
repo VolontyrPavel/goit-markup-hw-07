@@ -94,10 +94,15 @@
     }
 
                                 /* --- our team ---*/
+    .section.another-back {
+    padding-bottom: 104px;
+    }
+
     .team-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 64px;
         justify-content: center
     }
 
@@ -108,7 +113,7 @@
 
                             /* -- customers --*/
     .cust-item {
-        width: calc((100% - 72px) / 3);
+        width: calc((100% - 234px) / 3);
     }
 
                             /* --- footer --- */
@@ -121,8 +126,8 @@
 
     .footer-media {
         margin-right: 0;
+        margin-bottom: 0;
         margin-left: 0;
-        margin-bottom: 72px;
 
         text-align: left;
     }
@@ -151,13 +156,16 @@
         margin-right: 0;
     }
 
+    .footer-text.media {
+        text-align: left;
+    }
+
     .ft-sub {
+        margin-top: 72px;
         margin-left: 108px;
     }
 
-    .footer-text.media {
-        margin-top: 0;
-
+    .footer-text.sub {
         text-align: left;
     }
 

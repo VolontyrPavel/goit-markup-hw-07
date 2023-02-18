@@ -21,4 +21,8 @@
     .mob-tel-link {
         font-size: 36px;
     }
+
+    .mob-soc-list {
+        gap: 56px;
+    }
 }

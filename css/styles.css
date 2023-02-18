@@ -88,7 +88,7 @@ body {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -28px;
+    bottom: -35px;
     height: 4px;
     background: var(--hover-background);
     border-radius: 2px;
@@ -99,15 +99,19 @@ body {
 }
                             /* header */
 
-.header-container {
+.header {
     padding-top: 24px;
     padding-bottom: 24px;
+    
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
     display: flex;
     align-items:center;
     justify-content: space-between;
     box-sizing: border-box;
 
-    border-bottom: 1px solid var(--border-color);
 }
 
 .logo-header {
@@ -136,6 +140,8 @@ body {
 
     width: 32px;
     height: 22px;
+    background-color: transparent;
+    border: 1px solid transparent;
 }
 
 .hamburger-icon {
@@ -145,7 +151,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     color: var(--title-text-color);
 }
 
@@ -163,7 +169,7 @@ body {
     background-image: var(--grad), 
     url(../images/hero/mobile/mobile-bg-1x.jpg);
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
     background-position: center;
     max-width: 1440px;
 
@@ -252,7 +258,7 @@ body {
 
 .section-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 72px;
     text-align: center;
 
     font-size: 36px;
@@ -261,18 +267,21 @@ body {
     text-transform: capitalize;
 } 
 
-.another-back {
+.section.another-back {
+    padding-bottom: 128px;
     background-color: var(--secondary-background);
 }
 
 .team-list {
-    padding-left: 66px;
-
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+    row-gap: 72px;
 }
 
 .team-item {
-    margin-top: 72px;
+    margin-right: 0;
     padding-bottom: 32px;
 
     width: 264px;
@@ -332,6 +341,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    justify-content: center;
 }
 
 .cust-item {
@@ -371,8 +381,13 @@ body {
     background-color: var(--footer-background);
 }
 
+.ft-div {
+    margin-bottom: 72px;
+}
+
 .footer-media {
     margin-right: auto;
+    margin-bottom: 72px;
     margin-left: auto;
 
     text-align: center;
@@ -403,7 +418,7 @@ body {
 }
 
 .footer-text.media {
-    margin-top: 72px;
+    margin-top: 0;
     margin-bottom: 16px;
 
     text-align: center;
@@ -536,7 +551,7 @@ body {
 
 .mob-tel-link {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.11;
     color: var(--logo-text-color);
 
@@ -564,8 +579,7 @@ body {
 
     display: flex;
     justify-content: center;
-    gap: 56px;
-
+    gap: 30px;
 }
 
 .mob-soc-item {
