@@ -66,12 +66,11 @@ body {
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
     max-width: 428px;
-    padding-right: 16px;
-    padding-left: 16px;
-
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
@@ -147,11 +146,12 @@ body {
     align-items: center;
     justify-content: center;
 
-    fill: var(--title-text-color);
+    color: var(--title-text-color);
 }
 
                            /* hero */
 .hero {
+    margin: 0 auto;
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -165,6 +165,7 @@ body {
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
+    max-width: 1440px;
 
     background-color: var(--footer-background);
 }
@@ -213,7 +214,6 @@ body {
 
 
                             /* --- our principles --- */ 
-
 .princip-item:not(:last-child) {
     margin-bottom: 72px;
 }
@@ -244,6 +244,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+                            /*-- what are we doing --*/
+.do {
+    display: none;
+}
                             /* --- our team ---*/
 
 .section-title {
@@ -368,7 +372,11 @@ body {
 }
 
 .footer-media {
+    margin-right: auto;
+    margin-left: auto;
+
     text-align: center;
+    width: 264px;
 }
 
 .logo-footer {
@@ -473,6 +481,7 @@ body {
                             /* --- mobile menu ---*/
 .mob-menu {
     padding-top: 80px;
+    padding-bottom: 40px;
     
     position: fixed;
     top: 0;
@@ -482,7 +491,7 @@ body {
     background-color: var(--hero-text-color);
 }
 
-.menu-container {
+.menu.container {
     padding-right: 40px;
     padding-left: 40px;
 
@@ -492,10 +501,6 @@ body {
     justify-content: space-between;
     overflow-y: auto;
 
-}
-
-.mob-menu-list {
-    display: block;
 }
 
 .modal-close {
@@ -586,7 +591,6 @@ body {
     width: 16px;
     height: 16px;
     fill: var(--footer-logo-color);
-
 }
 
 
@@ -619,7 +623,7 @@ body {
     
         padding: 72px 24px 24px;
     
-        width: 408px;
+        width: 392px;
         min-height: 576px;
         background: #FCFCFC;
         box-shadow: 

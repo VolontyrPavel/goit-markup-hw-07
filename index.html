@@ -22,8 +22,8 @@
 <body>
 
                             <!-- header -->
-<header class="container">
-    <div class="header-container">
+<header class="header">
+    <div class="container header-container">
         <nav class="nav-list">
             <a href=""class="logo-header link"><span class="logo"> Web</span>Studio</a>
             <ul class="header-list list">
@@ -46,8 +46,6 @@
                     
 </header>
 
-<!--сделать мобильное меню-->
-
 <!-- main -->
 <main>
                             <!-- hero -->
@@ -59,7 +57,7 @@
 </section>
 
                             <!-- our principles -->
-<section class="section">
+<section class="section another">
     <div class="container">
         <h2 class="visually-hidden">Our Principles</h2>
         <ul class="princip-list list">
@@ -95,6 +93,17 @@
             </div>
             <h3 class="section-suptitle">Technologies</h3>
             <p class="section-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p></li>
+        </ul>
+    </div>
+</section>
+
+                            <!-- what are we doing -->
+<section class="section do">
+    <div class="container"> <h2 class="section-title">What are we doing</h2>
+        <ul class="do-list list">
+            <li><img src="./images/what are we doing/route1.jpg" alt="monoblock pc" width="360"></li>
+            <li><img src="./images/what are we doing/route2.jpg" alt="smartphone" width="360"></li>
+            <li><img src="./images/what are we doing/route3.jpg" alt="smartphone and laptop" width="360"></li>
         </ul>
     </div>
 </section>
@@ -319,53 +328,55 @@
                             <!-- footer -->
 <footer class="footer">
     <div class="container footer-container">
-        <div class="footer-media">
-            <a href="./index.html" class="logo-footer link"><span class="logo"> Web</span>Studio</a>
-            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+        <div class="ft-div"> 
+            <div class="footer-media">
+                <a href="./index.html" class="logo-footer link"><span class="logo"> Web</span>Studio</a>
+                <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+            </div>
+            <div class="footer-div-media">
+                <p class="footer-text media">Social media</p>
+                <ul class="footer-soc-list list">
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link ft link">
+                            <svg class="team-soc-icon ft">
+                                <use href="./images/icon/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link ft link">
+                            <svg class="team-soc-icon ft">
+                                <use href="./images/icon/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link ft link">
+                            <svg class="team-soc-icon ft">
+                                <use href="./images/icon/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link ft link">
+                            <svg class="team-soc-icon ft">
+                                <use href="./images/icon/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-div-media">
-            <p class="footer-text media">Social media</p>
-            <ul class="footer-soc-list list">
-                <li class="team-soc-item">
-                    <a href="" class="team-soc-link ft link">
-                        <svg class="team-soc-icon ft">
-                            <use href="./images/icon/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="team-soc-item">
-                    <a href="" class="team-soc-link ft link">
-                        <svg class="team-soc-icon ft">
-                            <use href="./images/icon/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="team-soc-item">
-                    <a href="" class="team-soc-link ft link">
-                        <svg class="team-soc-icon ft">
-                            <use href="./images/icon/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="team-soc-item">
-                    <a href="" class="team-soc-link ft link">
-                        <svg class="team-soc-icon ft">
-                            <use href="./images/icon/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div>
+        <div class="ft-sub">
             <p class="footer-text media">Subscribe</p>
-                <form class="footer-form"> 
-                    <input class="footer-email" name="user-email" type="email" placeholder="E-mail">
-                    <button class="footer-button" type="submit">Subscribe 
-                        <svg class="team-soc-icon ft">
-                            <use href="./images/icon/sprite.svg#icon-email"></use>
-                        </svg>
-                    </button>
-                </form>
+            <form class="footer-form"> 
+                <input class="footer-email" name="user-email" type="email" placeholder="E-mail">
+                <button class="footer-button" type="submit">Subscribe 
+                    <svg class="team-soc-icon ft">
+                        <use href="./images/icon/sprite.svg#icon-email"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
 </footer>
@@ -374,18 +385,18 @@
                             <!--mobile menu-->
 <div class="is-hidden" data-menu>
     <div class="mob-menu">
-        <div class="menu-container">
+        <div class="menu container">
             <nav>
                 <ul class="mob-menu-list list">
-                    <li><a href="./index.html"class="mob-menu-link link">Studio</a></li>
-                    <li><a href="./portfolio.html"class="mob-menu-link link">Portfolio</a></li>
-                    <li><a href=""class="mob-menu-link link">Contacts</a></li>
+                    <li class="mob-menu-link"><a href="./index.html" class="link">Studio</a></li>
+                    <li class="mob-menu-link"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                    <li class="mob-menu-link"><a href="" class="link">Contacts</a></li>
                 </ul>
             </nav>
             <div>
                 <ul class="mob-menu-list list">
-                    <li><a href="tel:+110001111111" class="mob-tel-link link">+11 (000) 111-11-11</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="mob-address-link link">info@devstudio.com</a></li>
+                    <li class="mob-tel-link"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+                    <li class="mob-address-link"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
                 </ul>
                 <ul class="mob-soc-list list">
                     <li class="mob-soc-item">

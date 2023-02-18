@@ -77,11 +77,16 @@
     .princip-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .princip-item {
         width: calc((100% - 24px) / 2);
+    }
+
+    .princip-item:not(:last-child) {
+        margin-bottom: 0;
     }
 
     .section-suptitle {
@@ -108,7 +113,17 @@
 
                             /* --- footer --- */
 
+    .ft-div {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
     .footer-media {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 72px;
+
         text-align: left;
     }
 
@@ -118,11 +133,15 @@
     }
 
     .footer-email {
+        margin-right: 0;
+
         width: 264px;
     }
 
     .footer-button {
         margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .footer-text {
@@ -132,12 +151,24 @@
         margin-right: 0;
     }
 
+    .ft-sub {
+        margin-left: 108px;
+    }
+
     .footer-text.media {
+        margin-top: 0;
+
         text-align: left;
     }
 
     .footer-soc-list {
         justify-content: left;
     }
+
+
+                            /*--- modal ---*/
+.modal {
+    width: 408px;
+}
 
 }

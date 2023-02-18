@@ -1,6 +1,6 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
     }
 
     .section {
@@ -9,9 +9,18 @@
     }
 
                             /* header */
-    .header-container {
-        padding-right: 156px;
-        padding-left: 156px;
+    
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+    display: flex;
+    align-items:center;
     }
 
     .nav-list {
@@ -41,9 +50,8 @@
     }
 
                             /* --- our principles --- */ 
-    .princip-list {
-    margin-right: 156px;
-    margin-left: 156px;
+.section.another {
+    padding-bottom: 0;
 }
 
 .princip-item {
@@ -74,6 +82,17 @@
         font-weight: 400;
     }
 
+                            /*-- what are we doing --*/
+.do {
+    display: flex;
+}
+
+.do-list {
+    margin-top: 72px;
+
+    display: flex;
+    gap: 24px;
+}
                             /* --- our team ---*/
     .team-item {
         max-width: calc((100% - 72px) / 4);
@@ -90,6 +109,10 @@
     padding-bottom: 100px;
 }
 
+.ft-div {
+    gap: 0;
+}
+
 .footer-container{
     display: flex;
 }
@@ -101,6 +124,10 @@
 
 .footer-div-media {
     margin-right: 80px;
+}
+
+.ft-sub {
+    margin-left: 0;
 }
 
 .footer-text.media {
