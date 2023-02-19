@@ -179,4 +179,8 @@
     width: 408px;
 }
 
+.mob-menu {
+    display: none;
+}
+
 }

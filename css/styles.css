@@ -637,7 +637,7 @@ body {
     
         padding: 72px 24px 24px;
     
-        width: 392px;
+        width: 90%;
         min-height: 576px;
         background: #FCFCFC;
         box-shadow: 
@@ -741,11 +741,12 @@ body {
         margin-top: 16px;
         margin-bottom: 24px;
     
-        font-size: 12px;
+        font-size: 8px;
         line-height: 1.33;
         letter-spacing: 0.04em;
         color: #757575;
         display: flex;
+        flex-wrap: nowrap;
     }
     
     .policy-text::before {
@@ -763,7 +764,7 @@ body {
     }
     .modal-button {
         padding: 16px 32px;
-        margin-left: 95px;
+        margin-left: 45px;
     
         min-width: 169px;
         height: 56px;
